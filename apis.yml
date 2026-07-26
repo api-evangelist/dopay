@@ -1,7 +1,17 @@
 aid: dopay
 name: dopay
-description: dopay is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  dopay is a digital payroll platform operating in Egypt that lets employers
+  register employees and disburse salaries in minutes through a single system,
+  including permanent, temporary, and seasonal workers across construction,
+  agriculture, hospitality, retail, healthcare, education, and manufacturing.
+  Supervised by a bank and regulated by the Central Bank of Egypt, dopay
+  digitizes cash-based wage payments and pairs core Salary Disbursement with an
+  Early Pay earned-wage-access product that lets employees withdraw part of
+  their salary before payday. Originally a Techstars-backed fintech focused on
+  banking the unbanked, dopay is added to the API Evangelist network as a
+  company profile; it publishes a business web app and login but no public
+  developer API, portal, or documentation at this time.
 url: https://raw.githubusercontent.com/api-evangelist/dopay/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +19,30 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://dopay-web-site-cdn-media.s3.me-central-1.amazonaws.com/wp-content/uploads/2025/10/1759840436_499_5804_logoprimary_dopay.png
 tags:
 - Company
+- Payroll
+- Payments
+- Fintech
+- Earned Wage Access
+- Salary Disbursement
+- Egypt
+- Financial Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dopay-domain-security.yml
 - type: Website
   url: https://dopay.com/
+- type: Blog
+  url: https://dopay.com/en/knowledge-hub/
+- type: SignUp
+  url: https://dopay.com/en/sign-up/
+- type: Login
+  url: https://payroll.dopay.com/signin/
+- type: Support
+  url: https://dopay.com/en/contact-us/
+- type: TermsOfService
+  url: https://dopay.com/en/business-terms-conditions/
+- type: PrivacyPolicy
+  url: https://dopay.com/en/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
